@@ -2,6 +2,13 @@
 CREATE DATABASE blogManagment;
 USE blogManagment;
 
+
+-- creat new user and grant all the priveleges to it
+CREATE USER 'abadayoussef'@'localhost' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON * . * TO 'abadayoussef'@'localhost';
+FLUSH PRIVILEGES;
+
+
 -- create tables
 CREATE TABLE UserRole(IDRole INT AUTO_INCREMENT, RoleName VARCHAR(50), PRIMARY KEY(IDRole));
 CREATE TABLE Category(IDCategory INT AUTO_INCREMENT, CategoryName VARCHAR(50), PRIMARY KEY(IDCategory));

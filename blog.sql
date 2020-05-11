@@ -6,6 +6,8 @@ USE blogManagment;
 -- creat new user and grant all the priveleges to it
 CREATE USER 'abadayoussef'@'localhost' IDENTIFIED BY 'password123';
 GRANT ALL PRIVILEGES ON * . * TO 'abadayoussef'@'localhost';
+-- to grant priveleges only on this table
+-- GRANT ALL PRIVILEGES ON blogManagment.* TO 'abadayoussef'@'localhost';
 FLUSH PRIVILEGES;
 
 
